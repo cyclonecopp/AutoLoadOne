@@ -16,7 +16,7 @@ Contrary to other alternatives, it supports the easiest way to autoload classes 
 
 AutoLoadOne is a replacement to Composer's Autoload, rendering obsolete the use of psr-0 or psr-4.  
 
-**Last Update Octuber 14, 2018**
+**Last Update June 8, 2019**
 
 > "Universal Autoloading classes in PHP, any class, any time!"
 
@@ -458,6 +458,9 @@ Deny from all
 * Or you could restrict the access to PHP and it's the behaviour by default on Linux (it runs under Apache's account, most of the time as user NOBODY)
 
 ## Version
+* 1.15 2019-06-08 Removed external css again. Now it generates the css inside the file.
+* 1.14 2019-06-08 Fixed some bug.  Reverted to global (const arrays are not compatible with php<7.0)
+* 1.12 2019-05-10 Added some changes pushed. Removed css.
 * 1.11 2019-03-04 It allows to specify the result php file. And some cleanups.  Now, /namespace/nameclass:class is not considered a class
 * 1.10 2018-10-18 It solves a small bug when we load autoload.php from a different url and it calls a external and remote folder.
 * 1.9 2018-10-14 A small fix and some colors.
